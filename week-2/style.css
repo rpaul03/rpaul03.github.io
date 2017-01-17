@@ -1,0 +1,17 @@
+.header, .footer {
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+}
+
+#main [class*='col-md-3'] {
+    height: 400px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+#main [class*='col-md-6'] {
+  width: 75%;
+  height: 300px;
+  min-height: 400px;
+  max-height: 400px;
