@@ -1,0 +1,65 @@
+.header, .footer {
+    height: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#main [class*='col-md-3'] {
+    height: 300px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+#main [class*='col-md-6'] {
+  width: 75%;
+    height: 300px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+#main [class*='col-md-2'] {
+  width: 15%;
+    height: 300px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.middle{
+  height: 550px;
+  max-height: 550px;
+  min-height: 550px;
+}
+
+.body{
+  height: 550px;
+  max-height: 550px;
+  min-height: 550px;
+}
+
+.small{
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+  margin: 10px;
+
+}
+
+.grid{
+  margin-left: 15%;
+  margin-right: 15%;
+  align-items: center;
+}
+
+.bottom{
+  height: 300px;
+  max-height: 300px;
+  min-height: 300px;
+}
+
+.verybottom{
+  height: 300px;
+  max-height: 300px;
+  min-height: 300px;
+}
