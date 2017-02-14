@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Center</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <style media="screen">
+        body {
+            display: none;
+        }
+
+        .centerType {
+            padding: 25px 25px;
+        }
+
+        .randomColor {
+            height: 300px;
+            min-height: 300px;
+            max-height: 300px;
+            border: 1px solid black;
+        }
+        /*------------*/
+
+        .paddingMargin img {
+            margin-top: 8%;
+            margin-left: 30%;
+        }
+
+        .paddingMargin div {
+            margin-left: 20%;
+        }
+        /*------------*/
+        /*------------*/
+
+        .textAlignCenter {
+            text-align: center;
+        }
+        /*------------*/
+        /*------------*/
+
+        .marginAuto {
+            margin: 0 auto;
+            width: 50%;
+        }
+        /*------------*/
+        /*------------*/
+
+        img.displayed {
+            display: block;
+            margin-left: auto;
+            margin-right: auto
+        }
+        /*------------*/
+        /*------------*/
+
+        .paddingMarginPlus img {
+            padding-top: 10%;
+            padding-bottom: 3%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .paddingMarginPlus div {
+            padding: 3%;
+        }
+        /*------------*/
+        /*------------*/
+
+        .horAndVertRelativeContainer {
+            position: relative;
+        }
+
+        .horAndVertRelativeContainer img {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .horAndVertRelativeContainer div {
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+
+        .horAndVertRelativeWithChild {
+            position: relative;
+        }
+
+        .horAndVertAbsoluteChild {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /*------------*/
+        /*------------*/
+
+        .horAndVertFlexContainerElementsVertical {
+            height: 100px;
+            /* using flex*/
+            display: flex;
+            /* vertical display */
+            align-items: center;
+            /*horizontal display */
+            justify-content: center;
+            /* flow of items */
+            flex-flow: column;
+        }
+
+        .horAndVertFlexContainerElementsVertical div {
+            width: 60%;
+        }
+        /*------------*/
+        /*------------*/
+
+        .horAndVertFlexContainerElementsHorizontal {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .firsttext {
+            height: 150px;
+            max-height: 150px;
+            min-height: 150px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        .secondtext {
+            height: 100px;
+            max-height: 100px;
+            min-height: 100px;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 10px;
+        }
+
+        .heading {
+            height: 100px;
+            max-height: 100px;
+            min-height: 100px;
+        }
+
+        .sloth3{
+          display: block;
+          content: "";
+          margin: 0 auto;
+        }
+
+        .sloth4{
+          display: block;
+          content: "";
+          margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heading randomColor col-md-12">
+
+        <h1 class="textAlignCenter">Sloths</h1>
+
+    </div>
+
+    <div class="firsttext randomColor col-md-12">
+
+        <h1 class="textAlignCenter">高当は政67型70意ヘキミ企真モムコ一盛あ接見ーぜいけ持26先格宿リニホフ鉄連ぐゅきん的菊後ヒヌ聞表エシト体蘇事み京冠揺ゃラか。飾めわ</h1>
+
+    </div>
+    <div class="secondtext randomColor col-md-12">
+
+        <h1 class="textAlignCenter">高当は政67型70意ヘキミ企真モムコ一盛あ接見ーぜいけ持26先格宿リニホフ鉄連ぐゅきん的菊後ヒヌ聞表エシト体蘇事み京冠揺ゃラか。飾めわ</h1>
+
+    </div>
+    <!--    First Row         -->
+    <div class="row">
+        <div class="col-md-4 randomColor">
+            <span class="centerType">Type</span>
+            <br>
+            <img src="images/1sloth.png">
+            <div>
+                Bottom Type
+            </div>
+        </div>
+        <div class="col-md-4 randomColor">
+            <span class="centerType">Type</span>
+            <br>
+            <img src="images/2sloth.png">
+        </div>
+        <div class="col-md-4 randomColor">
+            <span class="centerType">Type</span>
+            <br>
+            <img src="images/3sloth.png" class="sloth3">
+            <img src="images/3sloth.png" class="sloth3">
+        </div>
+    </div>
+    <!--   Second Row          -->
+    <div class="row">
+        <div class="col-md-4 randomColor">
+            <img src="images/4sloth.png" class="sloth4">
+            <img src="images/4sloth.png" class="sloth4">
+
+        </div>
+        <div class="col-md-4 randomColor paddingMarginPlus">
+            <img src="images/5sloth.png">
+
+        </div>
+        <div class="col-md-4 randomColor horAndVertRelativeContainer">
+            <span class="centerType">Type</span>
+            <img src="images/6sloth.png">
+            <div>
+                Bottom Type
+            </div>
+        </div>
+    </div>
+    <!--   Third Row        -->
+    <div class="row">
+        <div class="col-md-4 randomColor horAndVertRelativeWithChild">
+            <div class="horAndVertAbsoluteChild">
+                <img src="images/7sloth.png" class="displayed">
+                <div class="textAlignCenter">
+                    Footer Text
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 randomColor horAndVertFlexContainerElementsVertical">
+            <span class="centerType">Type</span>
+            <img src="images/8sloth.png">
+            <div class="textAlignCenter">
+                Bottom Text
+            </div>
+        </div>
+        <div class="col-md-4 randomColor horAndVertFlexContainerElementsHorizontal">
+            <img src="images/9sloth.png">
+            <div class="textAlignCenter">
+                Side Text
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script>
+        function getRandomNumber(min, max) {
+            return Math.floor(Math.random() * max + min);
+        }
+        $(document).ready(function() {
+            var bodyColumns = $(".randomColor");
+            bodyColumns.each(function() {
+                $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+            })
+            $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+            $("body").fadeIn();
+        })
+    </script>
+</body>
+
+</html>
