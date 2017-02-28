@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Centring Week 6</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <style media="screen">
+        .header {
+            height: 60px;
+            min-height: 60px;
+            max-height: 60px;
+        }
+
+        .firstText {
+            height: 500px;
+            min-height: 500px;
+            max-height: 500px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: blue;
+            line-height: 100px;
+        }
+
+        .secondText {
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+        }
+
+        .firstText img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .firstText img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        .gallery {
+            height: 120px;
+            min-height: 120px;
+            max-height: 120px;
+        }
+
+        #pic1 {
+            margin-top: 5%;
+            padding-left: 40%;
+        }
+
+        .pic1 {
+            margin-top: 5%;
+            margin-left: 18%;
+        }
+
+        .galleryOneRight img {
+            margin-left: 40%;
+        }
+
+        .galleryOneRight div {
+            text-align: center;
+        }
+
+        .relativeParent {
+            position: relative;
+        }
+
+        .relativeParent img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .relativeParent2 {
+            position: relative;
+        }
+
+        .relativeParent2 img {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #pic2SideBySide1 {
+            left: 30%;
+        }
+
+        #pic2SideBySide2 {
+            left: 70%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!--header -->
+            <div class="col-md-2 randomColor header">
+
+            </div>
+            <div class="col-md-4 randomColor header">
+
+            </div>
+            <div class="col-md-2 randomColor header">
+
+            </div>
+            <div class="col-md-2 randomColor header">
+
+            </div>
+            <div class="col-md-2 randomColor header">
+
+            </div>
+        </div>
+        <div class="row">
+            <!--firstText -->
+            <div class="col-md-12 randomColor firstText">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="images/long1.jpg" alt="PIC1">
+                            <div class="carousel-caption">
+                                PIC1
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="images/long2.jpg" alt="PIC 2">
+                            <div class="carousel-caption">
+                                PIC 2
+                            </div>
+
+                            <div class="item">
+                                <img src="images/long3.jpg" alt="PIC3">
+                                <div class="carousel-caption">
+                                    PIC 3
+                                </div>
+
+                                <div class="item">
+                                    <img src="images/long1.jpg" alt="PIC 4">
+                                    <div class="carousel-caption">
+                                        PIC 4
+                                    </div>
+                                </div>
+                                ...
+                            </div>
+
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+          
+                <div class="row">
+                    <!--secondText -->
+                    <!--firstText -->
+                    <div class="col-md-6 randomColor secondText">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/cRpdIrq7Rbo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 randomColor secondText">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <!-- Include all compiled plugins (below), or include individual files as needed -->
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+                <script>
+                    function getRandomNumber(min, max) {
+                        return Math.floor(Math.random() * max + min);
+                    }
+                    $(document).ready(function() {
+                        var bodyColumns = $(".randomColor");
+                        bodyColumns.each(function() {
+                            $(this).css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+                        })
+                        $("body").css("background-color", "rgb(" + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + "," + getRandomNumber(0, 255) + ")");
+                    })
+                </script>
+
+</body>
+
+</html>
