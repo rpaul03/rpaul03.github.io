@@ -53,8 +53,7 @@
             mileage: 24,
             color: "magenta",
             fuelType: "electric",
-            src: "images/car1.jpg",
-            message: function() {
+ src: "images/car1.jpg",            message: function() {
                 console.log("A car is useful");
             }
         };
@@ -68,7 +67,43 @@
             $("#carDiv").html("<div>" + car.type + "</div>");
             $("#carDiv").append("<img src='images/car1.jpg' />");
             $("#carDiv").append("<div>" + car.price + "</div>")
-        })
+
+            var myHtml = "<div id='centerDiv'>"+
+        "<div>"+car.type+"</div>"+
+        "<img src='"+car.src+"'/>"+
+        "<div>"+car.price+"</div>"+
+        "</div>";
+
+        $("#carDiv").html(myHtml);
+
+        });
+
+        var car = {
+            type: "SUV",
+            price: 45000,
+            mileage: 24,
+            color: "magenta",
+            fuelType: "electric",
+ src: "images/car1.jpg",            message: function() {
+                console.log("A car is useful");
+            }
+        };
+        //object name.property
+        console.log(car.type);
+        console.log(car.price);
+        console.log(car.message());
+
+        $(document).ready(function() {
+        
+            var myHtml = "<div id='centerDiv'>"+
+    "<div>"+car.type+"</div>"+
+    "<img src='"+car.src+"'/>"+
+    "<div>"+car.price+"</div>"+
+    "</div>";
+
+    $("#carDiv").html(myHtml);
+
+    });
     </script>
 </body>
 
