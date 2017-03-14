@@ -4,66 +4,129 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Group</title>
+    <title>Hello World</title>
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <style media="screen">
-
-    .topnav {
-    background-color: #8B0000;
-    overflow: hidden;
+<style media = "screen">
+@import url('https://fonts.googleapis.com/css?family=Griffy|Oswald');
+.topnav {
+  background-color: #8B0000;
+  overflow: hidden;
 }
 .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topnav a:hover {
-    background-color: #ddd;
-    color: black;
+  background-color: #ddd;
+  color: black;
 }
 
 .topnav a.active {
-    background-color: #000;
-    color: white;
+  background-color: #000;
+  color: white;
 }
 
 .icon-bar {
-    width: 100%; /* Full-width */
-    background-color: #555; /* Dark-grey background */
-    overflow: auto; /* Overflow due to float */
+  width: 100%; /* Full-width */
+  background-color: #555; /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
 }
 
 .icon-bar a {
-    float: left; /* Float links side by side */
-    text-align: center; /* Center-align text */
-    width: 20%; /* Equal width (5 icons with 20% width each = 100%)
-    padding: 12px 0; /* Some top and bottom padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font size */
+  float: left; /* Float links side by side */
+  text-align: center; /* Center-align text */
+  width: 20%; /* Equal width (5 icons with 20% width each = 100%)
+  padding: 12px 0; /* Some top and bottom padding */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  color: white; /* White text color */
+  font-size: 36px; /* Increased font size */
 }
 
 .icon-bar a:hover {
-    background-color: #8B0000; /* Add a hover color */
+  background-color: #8B0000; /* Add a hover color */
 }
 
 .active {
-    background-color: #000; /* Add an active/current color */
+  background-color: #000; /* Add an active/current color */
 }
-Try it Yourself »
+#myTopNav{
+margin-left: 50%
+}
+#p1{
+  font-family: Griffy;
+  font-size: 100px;
+  text-align: center;
+}
+#p2{
+  font-family: Oswald;
+  font-size: 40px;
+  text-align: center;
+}
+#p3{
+  font-family: Oswald;
+  font-size: 40px;
+  text-align: center;
+}
+#p4{
+  font-family: Oswald;
+  font-size: 25px;
+  text-align: center;
+}
+#drink{
+  font-size: 45px;
+  font-family: Oswald;
+  text-align: center;
+}
+#responsible{
+  font-family: Griffy;
+  font-size: 20px;
+  text-align: center;
+}
+#cont{
+  margin-top: 30px;
+}
 
-    </style>
+.bottom{
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+}
+.bottomtext{
+  height: 100px;
+  max-height: 100px;
+  min-height: 100px;
+}
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+.text{
+  font-family: 'Indie Flower', cursive;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20%;
+}
+.picrow{
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+  margin-top: 20px;
+}
+.pics{
+  height: 200px;
+  max-height: 200px;
+  min-height: 200px;
+}
+.beer{
+  height: 100%;
+  width: 100%;
+}
+</style>
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -71,7 +134,7 @@ Try it Yourself »
   </head>
   <body>
 
-  <div class="icon-bar">
+    <div class="icon-bar">
 <a class="active" href="#"><i class="fa fa-home"></i></a>
 <a href="#"><i class="fa fa-search"></i></a>
 <a href="#"><i class="fa fa-envelope"></i></a>
@@ -83,15 +146,144 @@ Try it Yourself »
       <a href="#news">News</a>
       <a href="#contact">Contact</a>
       <a href="#about">About</a>
-      <a href="#imout">I'm Out</a>
+      <a href="#beer">Beer</a>
 
     </div>
+<div class="container">
+  <div class="row">
+    <p id="p1">
+      Better Together
 
 
+    </p >
+    <p id="p2">
+      Supporting American craft beer, demanding excellence, and choosing quality above all.
+    </p>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <p id="p3">
+        Join the journey for a better beer experience.
+
+    </p>
+
+    <p id="p4">
+        Sign up for inside info about seasonal and special releases, events around town, and new breweries coming to Southern Ontario.
+    </p>
+    <textarea id="textarea" rows = "1"> Enter your email</textarea>
+
+
+  </div>
+
+</div>
+
+<div class="container" id="cont">
+  <div class="row">
+  <div class="col-md-6">
+
+<p id="drink">
+      Drink with us
+    </p>
+    <p id="responsible">
+      Responsibly of course!
+    </p>
+      </div>
+      <div class="col-md-6">
+
+
+<img href="https://www.facebook.com" src="images/facebook.png" alt="facebook" >
+<img src="images/twitter.png" alt="twitter">
+<img src="images/instagram.png" alt="instagram">
+
+
+      </div>
+  </div>
+
+</div>
+
+<div class = "container">
+
+      <div class = "row">
+
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+          <div class = "col-md-2 randomColor pics">
+            <img src="images/beer.jpg" alt="beer" class = "beer">
+
+          </div>
+
+      </div>
+      <div class = "row">
+        <div class = "col-md-12 randomColor bottom">
+          <div class = "col-md-2 randomColor bottomtext">
+            <p class = "text">
+              Partners
+            </p>
+          </div>
+          <div class = "col-md-2 randomColor bottomtext">
+            <p class = "text">
+              About
+            </p>
+          </div>
+          <div class = "col-md-2 randomColor bottomtext">
+            <p class = "text">
+              Events
+            </p>
+          </div>
+          <div class = "col-md-2 randomColor bottomtext">
+            <p class = "text">
+              Beer Buzz
+            </p>
+          </div>
+          <div class = "col-md-2 randomColor bottomtext">
+            <p class = "text">
+              Contact
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
